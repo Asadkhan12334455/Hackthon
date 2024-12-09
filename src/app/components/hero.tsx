@@ -1,34 +1,21 @@
-import Image from "next/image";
 
-export default function Hero() {
-  return (
-    <div className="relative w-full h-screen bg-white flex items-center justify-center">
-      {/* Background Image */}
-      <div className="">
-        <Image
-          src="/HeroImage.png"
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          className=""
-        />
+export default function Hero (){
+  return(
+      <div
+      className="flex md:justify-end justify-center items-center md:h-[716px] h-[400px] bg-no-repeat bg-center bg-contain bg-[#F4F5F7]" 
+      style={{
+          backgroundImage: `url("/heroImage.png")`,
+      }}>
+          <div className="bg-[#FFF3E3] flex gap-[46px] flex-col h-full md:h-fit w-fit md:mr-[58px] rounded-[10px] pl-[39px] pr-[43px] pt-[62px] pb-[37px]">
+              <div>
+                  <h3 className="text-[#333333] text-[16px] font-semibold">New Arrival</h3>
+                  <h2 className="text-[#B88E2F]  text-[41px] md:text-[52px] font-bold leading-[50px] md:leading-[65px] mb-[17px]">Discover Our <br />New Collection</h2>
+                  <p className="font-medium md:text-[18px] text-[11px]  text-[#333333] leading-[16px] md:leading-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br /> elit tellus, luctus nec ullamcorper mattis.</p>
+              </div>
+              <div className="bg-[#B88E2F]  px-[72px] py-[25px] w-fit">
+                  <p className="text-[#ffffff] font-bold text-[16px]">BUY NOW</p>
+              </div>
+          </div>
       </div>
-      {/* Content Box */}
-      <div className="absolute z-10 bg-[#FFF3E3] max-w-[480px] p-8 md:p-12 rounded-lg shadow-lg ml-20">
-        <h6 className="text-base text-[#333333] font-medium tracking-wider">
-          New Arrival
-        </h6>
-        <h3 className="text-3xl md:text-5xl font-extrabold text-[#B88E2F] leading-snug mt-3">
-          Discover Our <br /> New Collection
-        </h3>
-        <p className="text-sm md:text-base text-[#333333] mt-4 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis.
-        </p>
-        <button className="mt-6 bg-[#B88E2F] text-white text-sm md:text-base font-semibold py-3 px-10 rounded shadow hover:bg-[#8A6246] transition duration-300 ease-in-out">
-          BUY NOW
-        </button>
-      </div>
-    </div>
-  );
+  )
 }

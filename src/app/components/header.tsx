@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactPage from './contact/page';
 import React from 'react';
 
 const Header = () => {
@@ -13,25 +14,25 @@ const Header = () => {
       {/* Group 2: Navigation Links */}
       <div className="flex gap-[58px]">
         <a
-          href="#"
+          href="/"
           className="text-[16px] leading-[24px] text-black hover:underline transition-all duration-200"
         >
           Home
         </a>
         <a
-          href="#"
+          href="shop"
           className="text-[16px] leading-[24px] text-black hover:underline transition-all duration-200"
         >
           Shop
         </a>
         <a
-          href="#"
+          href="/blog"
           className="text-[16px] leading-[24px] text-black hover:underline transition-all duration-200"
         >
           Blog
         </a>
         <a
-          href="#"
+          href="/contact"
           className="text-[16px] leading-[24px] text-black hover:underline transition-all duration-200"
         >
           Contact
@@ -40,10 +41,12 @@ const Header = () => {
 
       {/* Group 3: Icons */}
       <div className="flex items-center gap-[30px]">
-        <Image src="/Vector3.png" alt="Cart" width={24} height={24} />
-        <Image src="/Vector2.png" alt="Wishlist" width={24} height={24} />
-        <Image src="/Vector1.png" alt="Search" width={24} height={24} />
-        <Image src="/Vector.png" alt="Contact" width={24} height={24} />
+        
+
+        <a href="/contact"> <Image src="/Vector3.png" alt="Contact" width={24} height={24} /></a>
+        <a href="/checkout">   <Image src="/Vector2.png" alt="Wishlist" width={24} height={24} /></a>
+        <a href="/shop">    <Image src="/Vector1.png" alt="Search" width={24} height={24} /></a>
+        <a href="/cart">   <Image src="/Vector.png" alt="cart" width={24} height={24} /></a>
       </div>
     </div>
   );

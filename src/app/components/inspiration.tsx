@@ -16,7 +16,7 @@ const RoomInspiration = () => {
               that inspire you.
             </p>
           </div>
-          <button className="bg-primary text-white hover:text-primary hover:bg-white hover:border-[4px] hover:border-primary px-[36px] py-[12px] font-semibold text-[16px] w-fit">
+          <button className="bg-primary text-white hover:text-primary hover:bg-white hover:border-[1px] hover:border-primary px-[36px] py-[12px] font-semibold text-[16px] w-fit">
             Explore More
           </button>
         </div>

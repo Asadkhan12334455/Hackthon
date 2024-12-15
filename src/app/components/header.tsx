@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import ContactPage from './contact/page';
 import React from 'react';
 
 const Header = () => {
